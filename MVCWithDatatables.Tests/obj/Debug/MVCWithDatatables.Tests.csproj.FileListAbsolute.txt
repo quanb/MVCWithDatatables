@@ -1,0 +1,1 @@
+D:\IT\workspace\MVCWithDatatables\MVCWithDatatables.Tests\obj\Debug\MVCWithDatatables.Tests.csprojResolveAssemblyReference.cache

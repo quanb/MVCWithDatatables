@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCWithDatatables.Models.DataTables;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,7 @@ namespace MVCWithDatatables
     {
         protected void Application_Start()
         {
+            ModelBinders.Binders.Add(typeof(DataTableParamModel), new DataTablesModelBinder());
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

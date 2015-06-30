@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery DataTables/ASP.NET MVC Integration</title>
+    <link href="@Url.Content("~/Content/jquery.dataTables.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.11.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.dataTables.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/index.js")" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="demo">
+            <h2>Index</h2>
+            <table id="myDataTable" class="display">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Company name</th>
+                        <th>Address</th>
+                        <th>Town</th>
+                        <th>Whatever</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

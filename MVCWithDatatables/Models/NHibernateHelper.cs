@@ -16,10 +16,10 @@ namespace MVCWithDatatables.Models
         {
             ISessionFactory sessionFactory = Fluently.Configure()
                                             .Database(MsSqlConfiguration.MsSql2008.ConnectionString(c =>
-                                            c.FromConnectionStringWithKey("QuanbBlogDbConnString")))
+                                            c.FromConnectionStringWithKey("CompanySampleConnString")))
                                             .Cache(c => c.UseQueryCache().ProviderClass<HashtableCacheProvider>())
                                             .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Company>())
-                                            .ExposeConfiguration(cfg => new SchemaExport(cfg).Execute(true, true, false))
+                                            //.ExposeConfiguration(cfg => new SchemaExport(cfg).Create(false, false))
                                             .BuildConfiguration()
                                             .BuildSessionFactory();
             return sessionFactory.OpenSession();
