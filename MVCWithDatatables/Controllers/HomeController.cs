@@ -27,14 +27,14 @@ namespace MVCWithDatatables.Controllers
 
         public ContentResult AjaxHandler(DataTableParamModel param)
         {
-            var companies = _repository.Companies(param);
+            var companies = _repository.Companies();
             var result = from c in companies select new[] { Convert.ToString(c.Id), c.Name, c.Address, c.Town, Convert.ToString(param.Columns.Count)};
             //var result = from c in companies select new[] { Convert.ToString(c.Id), c.Name, c.Address, c.Town, Convert.ToString(param.columns[0]["search"]) + "asf" };
             return Content(JsonConvert.SerializeObject(new
             {
                 draw = param.Draw,
-                recordsTotal = _repository.TotalCompanies(),
-                recordsFiltered = _repository.TotalCompaniesFiltered(param),
+                recordsTotal = companies.Count,
+                recordsFiltered = companies.Count,
                 data = result
             }), "application/json");
         }
