@@ -1,4 +1,3 @@
-D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\obj\Debug\MVCWithDatatables.csprojResolveAssemblyReference.cache
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\MVCWithDatatables.dll.config
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\MVCWithDatatables.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\MVCWithDatatables.pdb
@@ -6,6 +5,7 @@ D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\FluentNHibernate.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\Iesi.Collections.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\Newtonsoft.Json.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\NHibernate.dll
+D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\System.Linq.Dynamic.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\System.Web.Helpers.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\System.Web.Mvc.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\System.Web.Razor.dll
@@ -25,3 +25,4 @@ D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\System.Web.Helpers.xml
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\bin\System.Web.Mvc.xml
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\obj\Debug\MVCWithDatatables.dll
 D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\obj\Debug\MVCWithDatatables.pdb
+D:\IT\workspace\MVCWithDatatables\MVCWithDatatables\obj\Debug\MVCWithDatatables.csprojResolveAssemblyReference.cache
