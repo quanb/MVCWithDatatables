@@ -21,13 +21,13 @@ namespace MVCWithDatatables.Models.DataTables
             string draw = GetValue<string>(valueProvider, "draw");
             if (string.IsNullOrEmpty(draw))
             {
-                throw new ArgumentException("sEcho must always be provided");
+                throw new ArgumentException("draw must always be provided");
             }
             dataTable.Draw = int.Parse(draw);
             dataTable.Length = GetValue<int>(valueProvider, "length");
             dataTable.Start = GetValue<int>(valueProvider, "start");
             dataTable.Search = new Search
-                                    (GetValue<string>(valueProvider, "[search][value]"), GetValue<bool>(valueProvider, "[search][regex]"));
+                                    (GetValue<string>(valueProvider, "search[value]"), GetValue<bool>(valueProvider, "search[regex]"));
 
             int i = 0;
             while (true)
