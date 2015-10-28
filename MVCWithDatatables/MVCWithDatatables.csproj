@@ -109,13 +109,17 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-1.11.2.min.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery.dataTables.editable.js" />
     <Content Include="Scripts\jquery.dataTables.min.js" />
     <Content Include="Scripts\jquery.jeditable.mini.js" />
+    <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -128,12 +132,15 @@
     <Compile Include="Models\DataTables\Order.cs" />
     <Compile Include="Models\DataTables\Search.cs" />
     <Compile Include="Models\NHibernateHelper.cs" />
+    <Compile Include="Models\Sample\Company1.cs" />
+    <Compile Include="Models\Sample\DataRepository1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Sample\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

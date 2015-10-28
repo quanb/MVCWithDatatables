@@ -54,6 +54,12 @@ namespace MVCWithDatatables.Models
             return companies.ToList();
         }
 
+        public IList<Company> Companies()
+        {
+            IQueryable<Company> companies = _session.Query<Company>();
+            return companies.ToList();
+        }
+
         public int TotalCompanies()
         {
             return _session.Query<Company>().Count();
