@@ -41,17 +41,19 @@ namespace MVCWithDatatables.Models
                     filterString.AppendFormat("{0}.ToLower().Contains(@0)", col);
                 }
                 companies = _session.Query<Company>()
-                                .Where(filterString.ToString(), tableParam.Search.Value.ToLower())
-                                .Skip(tableParam.Start)
-                                .Take(tableParam.Length);
+                                .Where(filterString.ToString(), tableParam.Search.Value.ToLower());
             }
             else
             {
-                companies = _session.Query<Company>()
-                               .Skip(tableParam.Start)
-                               .Take(tableParam.Length);
+                companies = _session.Query<Company>();
             }
-            return companies.ToList();
+            int sortColIndex = tableParam.Order[0].Column;
+            if (tableParam.Columns[sortColIndex].Orderable)
+            {
+                companies = companies.OrderBy(tableParam.Columns[sortColIndex].Name + ((tableParam.Order[0].Dir == "desc") ? " descending" : ""));
+            }
+
+            return companies.Skip(tableParam.Start).Take(tableParam.Length).ToList();
         }
 
         public int TotalCompanies()
